@@ -11,7 +11,7 @@ let transporter = nodemailer.createTransport({
     clientId: '541237565616-ogf8f91sudg1m1bdbde13lfn2r1487es.apps.googleusercontent.com',
     clientSecret: 'mSzEJ2oi3fmrRHtOMKPgPjV5',
     refreshToken: '1/RLaDMXi_W-rbmvkB1MGsvdKxtW8kVWJq74JDnIA2Q7M',
-    accessToken: 'ya29.Glw2B9vDvybXF6KRWjKE3TD9d7IAHL5lSpvtmQcR2CSkPnd1hFuuUdf2Lfs_aIjpdqj60zsJYIztagB4zad5fPFItWsTZdqKJ4zUY_5kSTXgWLOOaWYM82DXmO80pQ',
+    accessToken: 'ya29.Glw2B9RuAo6UTjTdKfx3iTTvGQ95fM82kpHY7XTXfEblMllHJZam1jDLp6cdRT6OCMRdWRAa6nozDkdI2ePa0g8gg3yk6v55Z_JSL0S2ZTCb-HvGAvVHdhnZVSmRLw',
     
   }
 });
@@ -200,6 +200,7 @@ const resultReducer = (req) => {
             
             emailHtml = `<h1>${forSurvey(req.body)}</h1>`;
           break;
+        
   
       }
       const mailOptions = {

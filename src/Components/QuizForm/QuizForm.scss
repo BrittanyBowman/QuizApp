@@ -14,6 +14,8 @@
 .quiz-form-title-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -28,6 +30,7 @@
     height: 20px;
     width: 200px;
     margin-top: 20px;
+    font-size: 20px;
 }
 
 .test-type-container {

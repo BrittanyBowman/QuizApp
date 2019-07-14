@@ -214,7 +214,7 @@ class TakeQuiz extends Component{
             
 
             return(
-                <div>
+                <div style={{"background-color" : "white", "margin" : "auto", "width": "45%", "height": "100vh"}}>
 
                     <h1>{this.state.quizName}</h1>
                     

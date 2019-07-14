@@ -370,17 +370,51 @@ class QuizForm extends Component {
 
         return (
             <div>
-                <div className="header">
-                </div>
                 <div>
-                    <label>
-                        Quiz Name
+
+
+                <section className="email-section">
+                        <div className="who-to-mail-title-container">
+                            <p className="who-to-mail-title"> Who To Email: </p>
+                        </div>
+
+                        <div className="email-options-container">
+                            <div className="email-option1">
+                                Quiz Maker
+                                   <input
+                                    className="quizmaker-input-box"
+                                    type='checkbox'
+                                    value='quizOwner'
+                                    name='whoToEmail'
+                                    onChange={(event) => this.handleWhoToEmail(event.target.value)}
+                                />
+                            </div>
+
+                            <div className="email-option2">
+                                Quiz Taker  <input
+                                    className="quiztaker-input-box"
+                                    type='checkbox'
+                                    value='quizTaker'
+                                    name='whoToEmail'
+                                    onChange={(event) => this.handleWhoToEmail(event.target.value)}
+                                />
+                            </div>
+
+
+
+                        </div>
+
+                    </section>
+
+
+                    <section className="quiz-form-title-container">
+                        <p className="quiz-form-title">Quiz Title</p>
                         <input
                             type='text'
-                            className='quizName'
+                            className="quiz-form-title-input"
                             onChange={event => this.handleQuizNameChange(event.target.value)}
                             />
-                    </label>
+                    </section >
                 </div>
                 <label>
                     <div className="quiz_form_container">
@@ -417,38 +451,7 @@ class QuizForm extends Component {
                             </select>
                         </div>
                     </div>
-                    <section className="email-section">
-                        <div className="who-to-mail-title-container">
-                            <p className="who-to-mail-title"> Who To Email: </p>
-                        </div>
-
-                        <div className="email-options-container">
-                            <div className="email-option1">
-                                Quiz Maker
-                                   <input
-                                    className="quizmaker-input-box"
-                                    type='checkbox'
-                                    value='quizOwner'
-                                    name='whoToEmail'
-                                    onChange={(event) => this.handleWhoToEmail(event.target.value)}
-                                />
-                            </div>
-
-                            <div className="email-option2">
-                                Quiz Taker  <input
-                                    className="quiztaker-input-box"
-                                    type='checkbox'
-                                    value='quizTaker'
-                                    name='whoToEmail'
-                                    onChange={(event) => this.handleWhoToEmail(event.target.value)}
-                                />
-                            </div>
-
-
-
-                        </div>
-
-                    </section>
+                    
 
                 </label>
 
